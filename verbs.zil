@@ -285,8 +285,9 @@ long description (fdesc or ldesc), otherwise will print short."
 <ROUTINE V-VERSION ("AUX" (CNT 17))
 	 <TELL
 "INFIDEL|
-Copyright 1983 by Infocom, Inc.  All rights reserved.|
-INFIDEL is a trademark of Infocom, Inc.|
+Infocom interactive fiction - an adventure story|
+Copyright (c) 1983 by Infocom, Inc.  All rights reserved.|
+INFIDEL is a registered trademark of Infocom, Inc.|
 Release ">
 	 <PRINTN <BAND <GET 0 1> *3777*>>
 	 <TELL " / Serial number ">
@@ -785,7 +786,7 @@ your problem to the address provided in your documentation." CR>>
 
 <GLOBAL COPR-NOTICE
 " a transcript of interaction with INFIDEL.|
-INFIDEL is a trademark of Infocom, Inc.|
+INFIDEL is a registered trademark of Infocom, Inc.|
 Copyright (c) 1983 Infocom, Inc.  All rights reserved.|">
 
 <ROUTINE V-SCRIPT ()
@@ -1301,7 +1302,7 @@ a few moments." CR>
 
 <ROUTINE V-LEAP ("AUX" T S) #DECL ((T) <OR FALSE TABLE>)
 	 <COND (<AND ,PRSO
-		     <NOT <PRSO? ,INTDIR>>>
+		     <NOT <PRSO? ,INTDIR ,MAST-HOLE>>>
 		<PERFORM V?BOARD ,PRSO>
 		<RTRUE>)
 	       (<SET T <GETPT ,HERE ,P?DOWN>>
@@ -1342,10 +1343,11 @@ a few moments." CR>
 	       "Wheeeeeeeeee!!!!!"
 	       "Do you expect me to applaud?">>
 
-<GLOBAL JUMPLOSS
-	<LTABLE "You should have looked before you leaped."
-	       "I'm afraid that leap was a bit much for your weak frame."
-	       "In the movies, your life would be passing in front of your eyes."
+<GLOBAL JUMPLOSS <LTABLE "You should have looked before you leaped."
+	         "I'm afraid that leap was a bit much for your weak
+frame."
+	       "In the movies, your life would be passing in front of
+your eyes."
 	       "Geronimo.....">>
 
 <ROUTINE PRE-READ ()
@@ -2571,7 +2573,10 @@ specify which preposition you'd like to use next time, like LOOK AT THE " D ,PRS
 		<COND (<NOT <EQUAL? ,PRSO ,WINNER>>
 		       <TELL "The " D ,PRSO " doesn't need any help." CR>
 		       <RTRUE>)>)>
-	 <TELL "You got yourself into this -- now get yourself out of it." CR>>
+	 <TELL
+"You got yourself into this -- now get yourself out of it.|
+[If you really need help, you can order an InvisiClues Hint Booklet
+and a complete map by using the order form that came in your package.]" CR>>
 
 <ROUTINE V-STAND-UNDER ()
 	 <COND (<AND <EQUAL? ,PRSO ,CRATE ,PLANE ,PARACHUTE>

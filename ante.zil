@@ -783,14 +783,16 @@ into the walls, one on either side of the passageway.")
 	(DESC "plaster")
 	(SYNONYM PLASTE)
 	(SIZE 5)
-	(TEXT
-"Some hieroglyphics on the plaster say:|
-|
-   *->  #  !!!  ::  ...>  .-")
 	(ACTION PLASTER1-FCN)>
 
 <ROUTINE PLASTER1-FCN ()
-	 <COND (<VERB? TAKE MUNG ATTACK>
+	 <COND (<VERB? EXAMINE READ>
+		<TELL
+"Some hieroglyphics on the plaster say:|
+">
+		<PLASTER1-GLYPHS>
+		<RTRUE>)
+	       (<VERB? TAKE MUNG ATTACK>
 		<COND (<NOT ,PRSI>
 		       <COND (<IN? ,PICK-AXE ,WINNER>
 			      <SETG PRSI ,PICK-AXE>)
@@ -1219,7 +1221,17 @@ far enough above the surface of the table to activate a mechanism. You hear it
 click just before the ceiling comes down to meet the floor.">
 
 <ROUTINE SCARAB-CHECK-FCN ("AUX" L-W R-W (L-OBJ <>) (R-OBJ <>))
-	 <COND (<VERB? TAKE>
+	 <COND (<VERB? EXAMINE READ>
+		<TELL
+"Etched onto its back is the following:|
+">
+		<FIXED-FONT-ON>
+		<TELL "|
+              >*>|
+">
+		<FIXED-FONT-OFF>
+		<RTRUE>)
+	       (<VERB? TAKE>
 		<SETG CAN-TURN-STATUES <>>
 		<SET L-OBJ <FIRST? ,LEFT-DISC>>
 		<SET R-OBJ <FIRST? ,RIGHT-DISC>>
@@ -1269,10 +1281,6 @@ the scarab within the smaller outlined area on the cover." CR>)>
 	(DESC "scarab")
 	(VALUE 10)
 	(SYNONYM SCARAB)
-	(TEXT
-"Etched onto its back is the following:|
-|
-              >*>")
 	(SIZE 8)
 	(MAP 3)
 	(ACTION SCARAB-CHECK-FCN)>
@@ -1294,18 +1302,24 @@ the scarab within the smaller outlined area on the cover." CR>)>
 	(SYNONYM PAGE)
 	(FLAGS NDESCBIT READBIT BURNBIT TURNBIT DONTTAKE TRYTAKEBIT)
 	(ACTION PAGE-FCN)
-	(SIZE 1)
-	(TEXT
+	(SIZE 1)>
+
+<ROUTINE PAGE-FCN ()
+	 <COND (<VERB? EXAMINE READ>
+		<TELL
 "Hieroglyphs can be seen as follows:|
-|
+">
+		<FIXED-FONT-ON>
+		<TELL "|
         =  .           !   !|
 <-*  #  =  -  #  !@!  !---!|
 |
             .           !  !|
-::  #  >*>  -  #  !@!  !--!")>
-
-<ROUTINE PAGE-FCN ()
-	 <COND (<VERB? TURN>
+::  #  >*>  -  #  !@!  !--!|
+">
+		<FIXED-FONT-OFF>
+		<RTRUE>)
+	       (<VERB? TURN>
 		<TELL "Unnecessary page turning may destroy the book." CR>
 		<RTRUE>)
 	       (<VERB? BURN>
@@ -1337,9 +1351,12 @@ referred to, it too has seen better days.")
 		<COND (<NOT <FSET? ,DEAD-BOOK ,OPENBIT>>
 		       <TELL 
 "The book isn't open. On the cover is the following, though:|
-|
+">
+		       <FIXED-FONT-ON>
+		       <TELL "|
        =|
-       =" CR>)
+       =" CR>
+		       <FIXED-FONT-OFF>)
 		      (T
 		       <PERFORM ,V?READ ,PAGE>)>
 		<RTRUE>)

@@ -1,0 +1,1980 @@
+MACROS for
+			      PYRAMID
+	(c) Copyright 1983 Infocom, Inc.  All Rights Reserved.
+
+GLOBALS for
+			      PYRAMID
+	(c) Copyright 1983 Infocom, Inc.  All Rights Reserved.
+
+SUBTITLE GLOBAL OBJECTS
+Yes, this synonym for LOCAL-GLOBALS needs to exist... sigh
+Sitting on your finger is a ring.
+It's part of your hands.
+random object
+The air is as clear as any Egyptian air can be.
+It's stale and musty
+I think you're an air head.
+You can see the block and the opening in there.
+The hole is empty.
+I don't see any hole here.
+It's right here.
+It's just a hole in the sand from your excavation attempts. There's no need to
+put anything into it.
+writing implement
+I see nothing special about the wall.
+empty hands
+I don't read palms.
+Are you really that hungry?
+Come on. Let nature take care of you. I'm sure it will, in time.
+Save yourself. Don't look at me, man.
+Take a course in Zen.
+Auto-eroticism is not the answer.
+Come on. Don't you have enough troubles?
+Hmmm. How do you propose I accomplish that?
+Fine. It couldn't pass for a massage, but consider it done!
+The mast is in the doorway, running from top to bottom.
+The beam is wedged in the doorway from side to side.
+The panels are beautiful pieces of art, to be appreciated by the Queen on her
+journey through the Netherworld.
+The ladder is made of wood, and it looks fairly sturdy.
+Its a small, one-engine plane, similar in shape to the old Piper Cubs.
+The plane dips its wings in salute.
+You wave at the plane through the top of the tent. Somehow, I doubt it
+noticed.
+The plane's returned to its home base.
+I suppose it's up in the air, somewhere.
+It's somewhere up over your head.
+All I can tell you about it is that it's out there.
+The plane's far gone, amigo.
+RRRRRRRrrrrrrr r r r r r   r    r     r.
+What plane? It's gone!
+Leave the plane alone. It's not bothering you.
+It's left with the wind, never to be seen again.
+It's white.
+What parachute?
+The most I can tell you is that it was white.
+Forget the chute, amigo. It's history. And if you don't get on with this, you
+will be too.
+Leave the parachute alone.
+sip of water
+No, I don't think I quite understand.
+Now that's an interesting thought.
+GLOBAL VARIABLES
+******************************************
+	Here come the globals
+********************************************
+hieroglyphs
+*->  #  !!!  ::  ...>  .-
+             .|
+<-*  #  /!\  -  #  (=  =)|
+|
+::  *->  #  !!!
+             -     !=!|
+<-*  #  /!\  .   #  ! !|
+|
+::  *->  #  !!!
+                      -|
+<-*  #  /!\  (.)  #  ! !|
+                      -|
+|
+           -|
+::  (  #  ! !|
+           -
+  ::|
+|
+<-*  
+  =!=  /  *
+
+          .      =  - -|
+!@!  ...>  -  #  *   =   ::  <...  ;|
+|
+#  *|
+   =
+The hieroglyphs look like this:|
+|
+                    !-!|
+...>  -.  >...  #  !  ! !|
+                    !-!|
+|
+/  ...>  /  #  !@!
+The hieroglyphs look like this:
+|
+|
+ <.>     <:>     <:.>|
+|
+ <::>    <::.>   <:::>|
+|
+ <:::.>  <::::>  <::::.>
+The hieroglyphs look like this:|
+|
+-!-  #  !*  ::  #  *!  ::|
+|
+*->  #  !@!  >*>
+I don't see them here.
+decorations
+Quite beautiful, no?
+They're quite huge, aren't they?
+There's no way to do that from here.
+Just where do you think you are?
+You're not on the barge!
+I can't do that from here.
+Don't you think using the plank would be safer?
+It might be easier without these bulkheads around.
+There's nothing on the deck.
+What a cahd! (52 to be exact!)
+You can make out a lot of sand and a small firepit.
+You can make out your cot and the trunk inside the tent.
+You can see nothing distinguishable by trying to look in through the bright
+sunlight.
+I see no thickets here.
+Thicker thickets have never been thicker.
+Parser-related stuff
+This COND is game independent (except the TELL)
+Those things aren't here!
+Here is the default 'cant see any' printer
+You can't see any
+ seems confused. "I don't see any
+Here is where special-case code goes. <MOBY-FIND .TBL> returns
+	   number of matches. If 1, then P-MOBY-FOUND is it. One may treat
+	   the 0 and >1 cases alike or different. It doesn't matter. Always
+	   return RFALSE (not handled) if you have resolved the problem.
+You wouldn't find any
+You can't see any
+SYNTAX for
+			      PYRAMID
+	(c) Copyright 1983 Infocom, Inc.  All Rights Reserved.
+
+SUBTITLE VOCABULARY
+ZORK game commands
+SUBTITLE REAL VERBS
+Take a sip of water
+Simple questions
+<SYNTAX WHAT ...> WHAT is a synonym of EXAMINE
+<SYNTAX WHERE ...> WHERE is a synonym of FIND
+CLOCK for
+			      ENCHANTER
+	(c) Copyright 1983 Infocom, Inc.  All Rights Reserved.
+
+MAIN for
+		 Pyramidal Locomotion
+	Copyright 1983 Infocom, Inc.  All Rights Reserved.
+
+put interrupts on clock chain
+set up and go
+It's too dark to see.
+Better open the 
+There's nothing in that.
+It's not in that.
+There isn't anything to 
+ that you mentioned 
+I don't know what you're referring to.
+I don't see what you are referring to.
+** PERFORM: PRSA = 
+I don't see what you are referring to.
+Room (M-BEG)
+Room (M-END)
+  Default ->
+Not handled
+You wake slowly, sit up in your bunk, look around the tent, and try to ignore
+the pounding in your head, the cottony taste in your mouth, and the ache in
+your stomach. The droning of a plane's engine breaks the stillness and you
+realize that things outside are quiet -- too quiet. You know that this can
+mean only one thing: your workmen have deserted you. They complained over the
+last few weeks, grumbling about the small pay and lack of food, and your
+inability to locate the pyramid. And after what you stupidly did yesterday,
+trying to make them work on a holy day, their leaving is understandable.|
+|
+The Professor's map was just an ancient map -- as worthless as an ice cube in
+the Arctic without an instrument fine enough to accurately measure longitude
+and latitude. You knew that the site was nearby. You dug, and you ordered the
+workers to dig, even without the box. As you listen to the plane and rub your
+aching eyes, you pray they left you supplies enough to find the pyramid and to
+survive, and that the plane's carrying the long-overdue box.
+PARSER for
+			      PYRAMID
+	(c) Copyright 1983 Infocom, Inc.  All Rights Reserved.
+
+Parser global variable convention:  All parser globals will 
+  begin with 'P-'.  Local variables are not restricted in any
+  way.
+
+INBUF - Input buffer for READ
+Parse-cont variable
+Orphan flag
+Parser variables and temporaries
+Byte offset to # of entries in LEXV
+Word offset to start of LEXV entries
+Number of words per LEXV entry
+Offset to parts of speech byte
+Offset to first part of speech
+First part of speech bit mask in PSOFF byte
+ Grovel down the input finding the verb, prepositions, and noun clauses.
+   If the input is <direction> or <walk> <direction>, fall out immediately
+   setting PRSA to ,V?WALK and PRSO to <direction>.  Otherwise, perform
+   all required orphaning, syntax checking, and noun clause lookup.
+I beg your pardon?
+I found too many nouns in that sentence.
+Check whether word pointed at by PTR is the correct part of speech.
+   The second argument is the part of speech (,PS?<part of speech>).  The
+   3rd argument (,P1?<part of speech>), if given, causes the value
+   for that part of speech to be returned.
+ Scan through a noun clause, leave a pointer to its starting location
+Print undefined word in input.
+   PTR points to the unknown word in P-LEXV
+I don't know the word '
+I can't use the word '
+ Perform syntax matching operations, using P-ITBL as the source of
+   the verb and adjectives for this input.  Returns false if no
+   syntax matches, and does it's own orphaning.  If return is true,
+   the syntax is saved in P-SYNTAX.
+I can't find a verb in that sentence!
+I don't understand that sentence.
+I can't answer that question.
+What do you want to 
+ your hands)
+I think that sentence was missing a noun.
+(How about the 
+I couldn't find enough nouns in that sentence!
+"I can't see that here!"
+It's too dark to see!
+ do you mean, 
+You don't have the 
+I can't use multiple 
+direct objects with '
+(c) Copyright 1983 Infocom, Inc.  All Rights Reserved.
+VERBS for
+			      PYRAMID
+	(c) Copyright 1983 Infocom, Inc.  All Rights Reserved.
+
+SUBTITLE DESCRIBE THE UNIVERSE
+SUBTITLE SETTINGS FOR VARIOUS LEVELS OF DESCRIPTION
+Maximum verbosity.
+Brief descriptions.
+Super-brief descriptions.
+SUBTITLE DESCRIBERS
+I see nothing special about the 
+It is pitch black. Off in the distance you hear hideous squealing and what can
+only be the sound of thousands of tiny, clawed feet coming closer.
+I can't see anything in the dark.
+DESCRIBE-OBJECT -- takes object and flag.  if flag is true will print a
+long description (fdesc or ldesc), otherwise will print short.
+ (lit and burning)
+ (tied to the altar)
+ (being worn)
+ (lit and burning)
+ (tied to the 
+ (outside the 
+You are carrying:
+Sitting on the 
+SUBTITLE SCORING
+Your score is 
+ out of a possible 
+This score gives you the rank of a 
+master adventurer
+very good adventurer
+fairly good looter
+poor professor
+fumbling beginner
+Do you wish to leave the game? (Y is affirmative): 
+Do you wish to start the game again? (Y is affirmative): 
+Okay. Restarting...
+Failed. Please reboot your system.
+Ok. See you next time!
+INFIDEL|
+Copyright 1983 by Infocom, Inc.  All rights reserved.|
+INFIDEL is a trademark of Infocom, Inc.|
+Release 
+ / Serial number 
+I can't see the 
+SUBTITLE DEATH AND TRANSFIGURATION
+
+|    ****  You have died  ****
+|
+|
+You feel yourself disembodied in a deep blackness. A voice from the void, or
+perhaps it's just your dying thoughts, rings in your ears.|
+|
+"Obsessions are the torment of men's souls, reaching out for something greater
+than life has offered. Perhaps this is what makes the difference between an
+ordinary mortal and an adventurer!" It is the last thing you hear.
+The great mysteries of the ancient pyramid remain unsolved. Although your
+desperation has served you well in getting this far, to get farther requires a
+wisdom, tempered by experience.
+Do you wish to restart? (Y is affirmative): 
+Restarting.
+Use directions for movement here.
+How in blazes does one launch that?
+You can't go that way.
+ is closed.
+Oh, no! You have been devoured by 6,502 rats!
+You can't go that way.
+You are empty handed.
+You are already wearing it.
+You already have one. One at a time, now!
+You already have it.
+You can't reach that.
+You'd better open the 
+ isn't in the 
+You are in it, loser!
+You are now wearing the 
+Your load is too heavy.
+You're carrying too many individual items already!
+You can't do that.
+There's no good surface on the 
+Better have your eyes checked.
+There's no room. The 
+ is already on the 
+You hear the 
+ crash below.
+You're not holding the 
+You can't do that.
+ isn't open.
+How can you do that?
+ is already in the 
+There's no room.
+That's easy for you to say since you don't even have it.
+You can't give the 
+You're not carrying the 
+You're not carrying the 
+ is closed.
+You must tell me how to do that to the 
+It is already open.
+It is already open.
+ fails to open.
+You must tell me how to do that to the 
+It is already closed.
+ is now closed.
+It is already closed.
+You cannot close that.
+WEIGHT:  Get sum of SIZEs of supplied object, recursing to the nth level.
+If there is a problem here, it is unintentional. You may report
+your problem to the address provided in your documentation.
+ a transcript of interaction with INFIDEL.|
+INFIDEL is a trademark of Infocom, Inc.|
+Copyright (c) 1983 Infocom, Inc.  All rights reserved.|
+Here begins
+I don't juggle objects!
+Sure. But it might be better to be a little more specific in how you want it
+moved.
+Moving the 
+ reveals nothing.
+You can't move the 
+ is already lit.
+You expect to light the torch with your glowing intellect?
+I see no match here.
+That's a little tough to do with an empty book of matches.
+You have now lit a match.
+I don't know how to light the 
+You can't light that.
+Ooops! You didn't remember to close the cover before striking! The matchbook
+bursts into flames, burning your fingertips.
+ is now lit.
+It is already out.
+ is now out.
+You can't extinguish that.
+Time passes...
+You are already on the 
+I suppose you have a theory on getting into the 
+You are now 
+You're not in that!
+You push yourself up and manage to get out of the cot. Your legs are a little
+wobbly, though, and your head swims.
+You are on your feet again.
+You realize, just in time, that getting out here would probably be fatal.
+You can't blast anything by using words.
+You'd better get 
+You can't go there in a
+You can't go there without a vehicle.
+Oh, no! An army of eleventy-seven rats, starved for affection (and food),
+leapt upon your body in a show of rodentine appreciation and devoured you!
+ leaves the room.
+Sorry, my memory isn't that good. You'll have to give a direction.
+You can't pour that.
+You can't pour that into anything.
+You'd have a lot of trouble pouring the 
+ has been filled, but the 
+ is now empty.
+Why bother?
+You'd better open the 
+ It is now pitch black.
+ gets wet, but quickly dries.
+The sand is gone with the wind.
+The sand falls through the cracks in the stone floor.
+You can't pour that on anything.
+Why bother? The jar is empty.
+Why waste precious liquid? But, if you insist, done! The liquid evaporates in
+a few moments.
+A little tough to get that wick through the closed jar, eh?
+The tip of the torch has been covered with the liquid.
+ The torch flares up, singing your eyebrows. Phew! Close call, there!
+How singularly useless.
+You probably put spinach in your gas tank, too.
+That's not very useful.
+There is nothing to fill it with.
+ Except for some sand.
+There's nothing to fill it with.
+ Except for maybe some sand.
+It's already full.
+Tough to do when the 
+ is closed.
+Okay, you have filled the 
+You may know how to do that, but I don't.
+A hollow voice says "Fool."
+You're not holding the 
+How can you drink that?
+That really hit the spot. It did make you a little thirstier, though.
+You feel much refreshed.
+ Some sand from the bottom of the canteen is gritty in your mouth, though.
+You're going to start sloshing around soon.
+You kneel down and drink deeply from the Nile and feel refreshed.
+I'd like to oblige, but it's not within easy reach.
+I don't think that the 
+ would agree with you.
+Insults of this nature won't help you.
+What a loony!
+Such language in a high-class establishment like this!
+ makes no sound.
+Give me a break!
+You will be lost without me!
+If you pray enough, your prayers may be answered.
+No one is listening...
+This was not a very safe place to try jumping.
+I think that only schizophrenics say "Hello" to a
+Nice weather we've been having lately.
+Very good. Now you can go to the second grade.
+Have you tried hopping around, too?
+Are you enjoying yourself?
+Wheeeeeeeeee!!!!!
+Do you expect me to applaud?
+You should have looked before you leaped.
+I'm afraid that leap was a bit much for your weak frame.
+In the movies, your life would be passing in front of your eyes.
+Geronimo.....
+It is impossible to read in the dark.
+How does one look through a
+How can I read a
+There's nothing on the walls worth reading.
+There is nothing but sand there.
+There is nothing but dust there.
+You can't see anything down there.
+There is nothing behind the 
+ is closed.
+There is nothing special to be 
+You're on it!
+There is nothing on the 
+ is closed.
+I don't know how to 
+look inside a
+feel inside a
+It could very well be too late!
+You're out of matches. Sorry.
+(lighting a match first)
+(lighting the match first)
+You'd better light 
+ catches fire and is consumed.
+ catches fire, but before you have a chance to react, the fire spreads.
+ catches fire and is consumed.
+You don't have the 
+I don't think you can burn the 
+You can't turn that!
+This has no effect.
+I really don't see how.
+How can you inflate that?
+Come on, now!
+It doesn't seem to work.
+You can't pick that.
+Be serious. Karate chop it? Come on!
+I doubt that the "cutting edge" of a
+ is adequate.
+Strange concept, cutting the 
+There is nothing here to 
+I've known strange people, but fighting a
+ with your bare hands is suicidal.
+You aren't even holding the 
+ is suicidal.
+Who do you think you are, Benny Goodman?
+Kicking the 
+Waving the 
+Playing in this way with the 
+Playing in this way with the 
+Fiddling with the 
+Pushing the 
+? Get serious.
+There's no need for that. Why not just pick it up and then carry it there?
+You can't push things to that.
+The statue bumps into a wall.
+It won't fit through the door.
+The pushed statue rests on the floor.
+You scratch at the seals with your fingers and accomplish little.
+Trying to destroy the 
+Trying to destroy the 
+ with your bare hands is suicidal.
+Trying to destroy the 
+ is quite self-destructive.
+Nothing much happens.
+ isn't here!
+ doesn't seem to work.
+ isn't notably helpful.
+ doesn't work.
+ has no effect.
+Why knock on a
+I don't know how to do that. I win in all cases!
+The FROBOZZ Corporation created, owns, and operates this programmer.
+Aarrrrrgggggggghhhhhhhhhhh!
+This has no effect.
+What a bizarre concept!
+This seems to have no effect.
+Nice to meet me. Funny, you think I look like myself.
+You can't take it; thus, you can't shake it!
+It sounds like there is something inside the 
+The liquid sloshes around.
+All of the objects spill onto the floor.
+There's nothing in the 
+(with the shovel)
+(with the axe)
+(with your hands)
+Digging with the 
+ is very silly.
+You can't dig in that.
+You dig a small hole, but it quickly fills in with water and sand, almost
+innediately disappearing.
+The ground is too hard here.
+I suppose you also excavate tunnels with a teaspoon?!
+Let's face it, for digging in the sand, the axe is cute but ineffective.
+The walls of the hole collapse around you, smothering you in the shifting
+sands.
+You've uncovered what could only be the top of a pyramid. After clearing it
+away with your hands, you notice a square opening in the top of it.
+You are in the desert, almost out of sight of the encampment to the west. At
+last, though, you've found the ancient pyramid. The top of the pyramid is
+clearly exposed and on one of its sides is a square opening.
+You've dug a small hole. As you stand there and watch it, the sand starts to
+fill it in a little.
+You've enlarged the hole a little, taking out two shovels-full for every one
+which collapses back in from the walls.
+You've made the hole quite sizable, though it's not very deep. The deeper you
+dig, the more the walls collapse and so you widen the base of the hole.
+You're knee-deep in the hole, digging away, taking out more and more sand.
+You've dug yourself into a deep hole. You're actually several feet below the
+surrounding sand. The walls look very unstable.
+It smells like a mixture of gasoline and embalming fluid. Yum Yum.
+Nice way to singe your nostrils!
+It smells quite dead.
+It smells a little musty.
+It smells just like a
+Now that's a cute idea. Maybe I'll try it next century.
+Go jump in a lake!
+This cannot be tied, so it cannot be untied!
+You can't tie it to yourself.
+You can't tie the 
+Don't bother.
+You could certainly never tie it with that!
+I'm not sure that a
+ can be melted.
+You'll have to speak up if you expect me to hear you!
+He's wide awake, or haven't you noticed...
+ isn't sleeping.
+ pays no attention.
+You cannot talk to that!
+You can't climb onto the 
+You can't do that while you're holding the rope.
+You can't climb a direction!
+You can't climb that!
+You're already on the beam.
+You are now standing on the beam.
+You step onto it, see no sense in remaining on it, then step off it.
+Get real. You don't have fly feet.
+You can't go that way.
+Climbing the walls is to no avail.
+It would help if the rope led someplace.
+Why would you send for the 
+That doesn't make sends.
+You cannot wind up a
+There are a lot of stones in the pyramid (about 90,000,000 cubic feet).
+What a maroon! What a cahd!
+a weird sense of counting!
+You can't do that.
+You are so engrossed in the role of the 
+ that
+you kill yourself, just as he would have done!
+How peculiar!
+You can't do that.
+You can't cross that!
+You find nothing unusual.
+Within six feet of your head, assuming you haven't left that somewhere.
+Why don't you try finding it yourself?
+You have it.
+With all this sand around here? Give me a break!
+It's right here.
+Talking to yourself is diverting, but unnecessary.
+You can't talk to the 
+Nobody seems to be awaiting your answer.
+It is hardly likely that the 
+ is interested.
+Yes, it is 
+No, it isn't.
+I'd sooner kiss a pig.
+An ugly idea from an ugly human.
+You must address the 
+Talking to yourself is said to be a sign of impending mental collapse.
+The incantation echoes back faintly, but nothing else happens.
+You can't spin that!
+You hit your head against the 
+ as you attempt this feat.
+That would involve quite a contortion!
+Not within this life cycle.
+With this kind of wisdom, be glad you're not in a Sphinx.
+A totally bizarre concept. For sure.
+Totally different head, man. Like, untubular.
+Kookie, man.
+I've heard better ideas from politicians.
+A truly amazing concept, that.
+Bizarre barely describes that desire.
+Let's face it -- that isn't going to happen.
+You can't wear the 
+You can't throw anything off of that!
+From where you are now? Get serious.
+Thrown. You hear it land in the darkness to the south.
+Don't you think you should be standing on the altar first?
+Verifying game...
+Game correct. Don't panic yet.
+** Game File Failure ** (Panic)
+You are already standing, I think.
+That hiding place is too obvious.
+You should supply a direction!
+Finds the room on the other side of a door
+How peculiar!
+There's nothing to drink in the 
+I don't think there's anything worth drinking in the 
+Better open the 
+I can't see any 
+Are you so very tired, then?
+You can't dip the 
+Poof. There's no need to get burned up about it though...
+You can't do that.
+You manage to destroy the seal. You glance to the right and see fine sand
+running from a crack in the stone. The beam creaks and groans under tremendous
+pressure as the 3 ton stone block above your head starts to lower.  The beam
+holds the weight, saving you from a flattening fate.
+You manage to destroy the seal, but as you stand in the doorway, you hear the
+disntict sound of grinding stone. You glance to your right and see fine sand
+running from a crack in the wall. You're totally unaware of the 3 tons of
+carved stone block falling onto your head from directly above.
+It tastes just like a
+Why bother?
+The statue bumps into a wall.
+Pushing the 
+ in that way isn't particularly helpful.
+I don't know how to do that to a
+Smoking is bad for your health.
+It's already folded up.
+Okay. The map has been folded.
+You manage to wade a few feet into the river, but this makes the crocodiles
+spring into action -- they advance far more quickly than you thought possible.
+You panic and turn to the bank, attempting to flee. Your splashing about makes
+the beasts double their efforts and reach you just as you are about to step on
+shore. The last thought you have is a slight amazement at how many teeth a
+crocodile has and just how sharp they are.
+I don't know how to dig a
+I can't dig in the 
+Okay. There's nothing of interest there.
+You'd better pick it up first.
+There's nothing to read there.
+You can't reach into that.
+ is closed.
+Cleanliness may be next to godliness, but there are limits.
+Why bother?
+That's a little tough to do from here.
+Tickity tockity, sprickity sprockety.
+Comparisons between the 
+ would not really help.
+It looks like the small cube would fit into the opening almost exactly.
+The two chalices are of exactly the same size and dimensions, though empty
+they have different weights.
+ are the same size.
+You have to compare the 
+ to something else.
+Tough to do without a scale.
+Now that's bizarre!
+There's no need for filling that out.
+Okay. Find me a pen or a pencil and I'll do the best I can.
+Please be more specific. LOOKing AT, BEHIND, UNDER, THROUGH, INSIDE, ON, DOWN,
+FOR, or any other method of LOOKing mean different things to me. Please
+specify which preposition you'd like to use next time, like LOOK AT THE 
+, or LOOK INSIDE THE 
+You see a pretty plane. Oh boy!
+You see canvas. How thrilling.
+You see a blue sky with wisps of billowy clouds.
+You see wood. What else?
+You see inky blackness.
+You see stones. What else?
+ doesn't need any help.
+You got yourself into this -- now get yourself out of it.
+It looks like that's just where you are.
+Better get out of the tent first.
+You can't stand under that!
+You close your eyes, but your mind is too active to let you sleep.
+You get into the cot and try to get comfy. 
+That doesn't sound too comfortable to me.
+Better find a good place to lie down.
+I don't know how to fill in the 
+Let time and Mother Nature take care of that.
+There's no need to get on the crate whilst rummaging through a pyramid.
+No sitting down on the job, now.
+ Opening the 
+Everything on the 
+ slides off its top.
+INTERRUPTS for
+			      PYRAMID
+	(c) Copyright 1983 Infocom, Inc.  All Rights Reserved.
+
+		
+		Interrupt Routines for
+			PYRAMID
+You're starting to feel a little woozy. You blink your eyes, but can't seem
+to focus correctly.
+Your ring finger is starting to throb painfully.
+You fall over on your face as a quick-acting poison from the ring makes its
+way to your heart. Bye!
+Like a grape, left out in the sun too long, you turn into a raisin for lack of
+water.
+If you don't drink something, and now, you're gonna be history.
+You'd better drink something, and soon!
+You wipe your fevered brow.
+You scowl at the sun, cursing its searing heat.
+Even in the tent the heat starts to get to you.
+Your match just went out.
+You blow out the match and toss it aside.
+ And it burned your fingers, too! You drop it. 
+ It is now pitch black.
+Your torch is too dry and burns itself out quickly.
+Your torch is beginning to sputter.
+Your torch is getting very, very dim.
+With a final blaze of glory, your torch goes out.
+It is now pitch black.
+The four statues, heavy though they are, effortlessly swing back in unison to
+clamp down on the quartz cover again.
+order was correct
+The statues freeze in their current positions and you hear a light click come
+from the cover of the sarcophagus.
+Your stomach growls in hunger.
+You feel yourself growing weaker. Without nourishment, this is a losing
+cause!
+You fall over on your face, dreaming of Thanksgiving dinner. Needless to say,
+it was you against hunger. And hunger won.
+You hear a plane flying high overhead, outside the tent.
+You crane your neck and see a plane, high overhead, circling the encampment.
+It sounds as if the plane is circling.
+The plane seems to be circling right overhead.
+You look up to see a small speck appear right beneath the plane -- probably a
+parachute. The plane heads off far to the northwest, dipping its wings in a
+salute.
+It sounds as if the plane is flying off.
+A small speck descending from the plane overhead gets larger until you see a
+crate, dangling from a parachute.
+You can barely hear the plane.
+The sound of something heavy landing comes from nearby.
+At last, your luck seems to be changing. A large crate lands right before you,
+its parachute flapping in the breeze. The parachute breaks away from the crate
+and drifts off in the wind.
+Even in this pyramid, you need to drink something, and soon.
+Your throat feels like it's coated with razor blades. Some water would be in
+order.
+Better drink something. NOW!
+Well, your body could only take so much of this heat. Like a car, idling on a
+crowded highway, your body decides it's time to overheat. Such is death.
+RA for
+			      PYRAMID
+	(c) Copyright 1983 Infocom, Inc.  All Rights Reserved.
+
+RA-This is a file of all rooms and objects found in the upper part of the
+pyramid; the Chamber of Ra.
+Chamber of Ra
+wide staircase)
+narrow staircase)
+steep staircase)
+winding staircase)
+You release the free end of the rope as you walk.
+The staircase winds as you walk down, turning you around
+so you face in the opposite direction.
+You take a few steps down the steep staircase when suddenly you lose your
+footing as you try to walk on air. You fall a mere 25 feet straight
+down and, landing on your head, regret your attempt.
+(down the rope)
+(down the steep staircase)
+You grasp the rope firmly in your hands, but the fall is shorter than you
+thought. You reach the bottom with a resounding splat accompanied by a chorus
+of pain led by ganglions you never knew you had. Just before you (thankfully)
+black out, you release your grip from the rope.
+Since there are four staircases going down, you'd better say which staircase.
+(down the rope)
+ Descending the 
+ is one end of the rope.
+ In the center of the room is a large red sandstone altar mounted solidly in
+the floor.
+ The rope is tied to the 
+ The other end of the rope rests on the floor.
+ The other end rests on the altar.
+You are standing in the Chamber of Ra, a tribute to the sun god. Even though
+the only natural light enters through the opening above, the room is
+brilliantly lit as though the walls themselves generated light. The room
+slopes inward and the walls meet at an open point, over your head. The heat of
+the desert filters down through the opening and, as the air slowly circulates,
+the deep, long-dead musty odors from the depths of the pyramid assault your
+senses. Four staircases descend from here: a steep one to the north, a winding
+one to the south, a wide one to the east, and a narrow one to the west.
+steep staircase
+wide staircase
+winding staircase
+narrow staircase
+There's just enough light to see the first few steps.
+You can see far enough down the stairs to make out a landing below.
+You can see the first few steps and then what could only be a sheer dropoff,
+going down into total darkness.
+You release the rope as you walk.
+On the Steep Stairs
+You are two steps down the steep staircase when you see before you a deep
+dropoff going down into nothingness. To go down any further would be suicide.
+stone altar
+The altar is three feet by five feet and is mounted firmly in the solid floor.
+ There is nothing on the altar.
+bronze torch
+Leaning against the altar is a bronze torch.
+The torch has a tapered tip, much like a wick, which should be able to hold
+a large amount of oil.
+ The torch is 
+burning brightly
+burning dimly
+Lying on the floor, partially covered with dust, is a small pink alabaster
+jar.
+Inside the small pink jar is some liquid.
+The jar is empty.
+Opening the jar reveals a small amount of liquid.
+The liquid is oily to the touch and smells as if it could be highly volatile.
+Hmm. It would be easier if you were holding it.
+It tastes horrible.
+Removed from the oil jar routine:
+ Unfortunately, what liquid remained in the jar has spilled and evaporated.
+		ANTECHAMBER for Pyramid
+Antechamber
+You are in the north end of the Chamber of Eternal Royalty. On the eastern
+and western walls are scenes carved in high relief depicting a royal figure,
+possibly meant to represent a new ruler, performing the ritual of the
+"opening of the mouth and eyes", the ceremony of restoring to the mummy
+of the departed Queen the use of its senses. The north wall of this area is
+a thick, solid wall of stone. In the center of this wall is a timber lintel
+on top of a doorway.
+There's no way you can walk through the door.
+There's no way you can walk through the door.
+timber lintel
+Antechamber
+You are in the middle of the Chamber of Eternal Royalty, the antechamber. The
+walls in this section of the antechamber are covered with beveled tiles of deep
+blue lapis lazuli and pink alabaster. At ceiling height, on the west wall, are
+scenes depicting the marriage of the goddess Isis and the god Osiris, carved in
+ivory panels set into the wall. The Antechamber stretches out to the north and
+the south. There's just enough light cast for you to see the outline of the
+bottomless pit in the passage to the east.
+Quite beautiful, no?
+bottomless pit
+It's too deep and dark to see much of anything.
+You hear the squealing of rats. Hungry rats.
+You step into air then plummet into a deep pit, the home of 69,105 hungry rats.
+timber frame
+The timber frame surrounds the doorway.
+You light the timber frame surrounding the door. The wood is slow to catch,
+but then, in a bursting flash, the entire frame is consumed. You shield your
+eyes and move back to keep from being burned, but as you take a step back, 
+your foot lands on empty space and you plummet downward to darkness.
+you loose your balance on the mast. Your foot misses the mast and you slip,
+falling into the darkness below.
+Antechamber
+You are in the southern end of the Chamber of Eternal Royalty. From here you
+can see the room stretching out towards the north. The south wall is painted to
+resemble large baskets of lotus flowers with their blue petals framing an image
+of the Sun God, Amun Ra. The west wall has a timber doorway, inset several feet
+into the rocks, outlining a door.
+The way to the west is blocked by a closed door.
+The way to the west is blocked by a closed door.
+The rocks support the beam.
+I see nothing special about the rocks.
+plaster dust
+The dust and chips are just remnants of your incessant tapping, tapping at the
+chamber door. Only this and nothing more.
+plaster dust
+The dust and chips are just remnants of your incessant tapping, tapping at the
+chamber door. Only this and nothing more.
+Be serious. Have you any acquaintance with particle physics? How about quarks?
+Know anything about quarks? Let me put it to you this way: There are more
+pieces of plaster dust and chips here than you have seconds in your life.
+You are in the Chamber of Rebirth, the Annex. As you gaze about this small
+room, strange kohl-rimmed eyes gaze back at you from the painted figures
+which cover all of the walls. There are scenes of a great procession, with
+white-clad princesses offering gifts of precious oils and papyri to the
+mummified figure of the Queen. Bastet, the cat goddess, holds the mummy
+erect. Above you, painted on the ceiling, is the image of Tueris, the
+hippopotamus goddess. The only way out is through the doorway to the east.
+I see no seam here.
+The seam is barely visible. It goes into the edge of the slab no more than an
+eight of an inch.
+It's not deep enough to wedge anything into it.
+It's already open.
+The slab opens slowly and gracefully as if some internal mechanism balanced
+its huge weight.
+It won't budge.
+Thirt (30) slots to hold objects in the slab
+ Sitting in the 
+Sitting in the middle of this room is a huge stone slab.
+ Around its side runs a seam which is barely detectable. On top of the slab
+are four round holes, one in each corner.
+ Sitting on the top of the slab 
+ The slab is open
+ and holds 
+ and quite empty
+fourth hole
+second hole
+The hole sits in the 
+ corner of the slab.
+The hole is already filled.
+Done. A light click comes from beneath the corner.
+Burial Chamber
+You have entered the Chamber of Departure Towards the Funeral Destinies, the
+Burial Chamber. There is a doorway leading into a small room off to the east.
+In the middle of the chamber, stretching almost from wall to wall, is a huge,
+ancient sarcophagus. Its cover is composed of pure quartz and through the
+shining light you can see the golden, gleaming mummiform coffin. 
+ Four statues surround the sarcophagus, one in each corner: Isis, Nephthys,
+Neith and Selkis. 
+Their outstretched arms clamp down tightly on the quartz cover.
+All four statues face away from the quartz cover, their grip on it released.
+facing inward, 
+ heavy golden arms clamping down tightly over the quartz cover of the
+sarcophagus.
+You are in the Chamber of Reconstitution of the Body, the Treasury. To the
+west is a doorway leading back into the Burial Chamber.
+granite table
+You should have left well enough alone. As you pick it up, the discs go wildly
+out of balance and, before you realize what you've done, the ceiling comes down
+to meet the floor. Unfortunately, you were between them at the time.
+middle disc
+The discs float up and down several times until they come back into balance.
+In the room is a large, granite table. Cut out from the top of this table are
+three circles of polished granite. 
+ is empty, and it is 
+Sitting on the 
+slightly above
+slightly below
+exactly even with
+ the top of the table.
+three inches
+four inches
+five inches
+seven inches
+eight inches
+Top of Stairway
+You are at the top of a sixteen-step stairway. It leads west and down. The
+strange passageway into the cube rooms lies to the south. The walls here are
+painted in somber colors -- deep ochres, browns and blacks, but the scenes the
+paintings depict are oddly gay. Priests smile, their hands lifted up high to
+Amun Ra, offering flower petals in their palms, while a young girl, bedecked
+in black, stands by watching, a twisted smile on her face.
+Bottom of Stairs
+You are at the bottom of the sixteen-step stairway. The stairway goes up to
+the east, while to the west is solid plaster. Painted on the plaster
+are some hieroglyphs.
+Solid plaster is blocking your way.
+Narrow Passageway
+You are at the east end of what seems like a long, straight passageway. After
+carefully looking over the walls, stones and floor, you determine that it is
+safe to proceed.
+Narrow Passageway
+You are in the middle of a long, east/west passage. The passage is narrow and
+seems to be little more than a hallway hewn out of stone.
+Narrow Passageway
+You have reached the west end of the passage. Before you is a door surrounded
+by a heavy timber frame. The door is entirely blocked up with plaster. Toward
+the bottom of the north wall and the south wall, about three inches off the
+floor, are two small niches. There are some hieroglyphs on the plaster.
+You can't walk through a closed door.
+small niche
+Each small niche rests about three inches off the floor. They are recessed
+into the walls, one on either side of the passageway.
+Some hieroglyphics on the plaster say:|
+|
+   *->  #  !!!  ::  ...>  .-
+(with your 
+The chips fly where they may as you relentlessly flail at the plaster with
+your trusty pick axe. In just a few minutes you manage to clear all the
+plaster from the doorway.
+You are at the bottom of the sixteen-step stairway. The stairway goes up to
+the east, while the way to the west has been cleared.
+You scratch at the plaster but accomplish little.
+The door is surrounded by a heavy timber frame and is entirely blocked up
+with plaster. There are some hieroglyphs on the plaster.
+It's already open.
+The door is covered with plaster, which is in turn covered with hieroglyphs.
+The door opens and you are overwhelmed by a musky odor.
+It isn't open.
+Okay. The door is closed.
+The plaster is ancient, applied to the door behind it to prevent people from
+entering the resting place of the queen. Some hieroglyphs are etched into the
+plaster.
+The plaster starts to chip away beneath the incessant tapping of your pick
+axe. You quickly realize, however, that the tapping has started some sand
+flowing out of the bottom of the doorway. Just as you realize the seriousness
+of your situation, the floor gives out beneath you and you plummet down, down,
+down into a den of voracious rats...
+(with your 
+ You wave to the beam stretching across the gap as you hurtle past it.
+The plaster chips fly from the door as the incessant tapping of your pick
+axe does its work. The tapping has started some sand flowing out of
+the bottom of the doorway and the floor starts to give away. In a few
+short moments, the floor has disappeared, but thankfully you're safe while
+standing on the beam.
+You are in the west end of the passage. The plaster has been cleared, allowing
+passage to the west.
+You scratch at the plaster but accomplish little.
+burial door
+It's buried behind 3 tons of stones. Forget it.
+The door is surrounded by small seals and has a hieroglyph on it.
+It's already open.
+With all the stones which fell in the doorway, there's not a chance of ever
+getting through again.
+I don't think it's that simple. Not only isn't there a doorknob, but the door
+is also covered with a seal.
+The door creaks open and you are assaulted by a deep, musty dead smell.
+It isn't open.
+Closing the door isn't the best of ideas.
+It's already open.
+You open the door and two huge stones start to close in on you from either
+side. Thankfully, you had the foresight to wedge the beam in the doorway to
+prevent a flattening experience.
+You open the door but before you can react, two huge stones close in on you --
+one from the left side and one from the right side. Needless to say, you didn't
+quite make it...
+This door seems to present no difficulty in opening. Lightly etched into it
+are some faint symbols.
+Isis statue
+Nephthys statue
+Neith statue
+Selkis statue
+Nothing happens. These statues seem to be beyond all hope.
+ moves slowly, pivoting about its base, 
+releasing its hold on the quartz cover.
+once more clamping down on the quartz cover.
+sarcophagus
+ sits on the sracophagus for a moment, but it quickly slides off its rounded top.
+quartz cover
+smaller recess
+larger recess
+There's already something on it.
+The area is separated from the quartz cover by being recessed about an inch.
+Sitting in the 
+There is a small recess and a large recess on the top of the cover which you
+can make out as thin, outlined areas.
+ Resting in the smaller recess is a
+ Sitting in the larger recess is the 
+You place the 
+ on the cover, but it slides
+right off onto the ground.
+You tug, push, pull, yank and generally tire yourself out trying to open the
+cover until you take a moment, wipe your brow, and look around. You notice that
+the cover is being held in place by the statues.
+As soon as you lift the scarab from the disc, the left and right discs rise
+far enough above the surface of the table to activate a mechanism. You hear it
+click just before the ceiling comes down to meet the floor.
+There's already something on it.
+You'd better not. Not until you know what's going on here.
+You hear a clicking sound come from beneath all of the statues as you place
+the scarab within the smaller outlined area on the cover.
+Looks like a scarab, from where it sits.
+Etched into its back is the following:|
+|
+              >*>
+ancient book
+Hieroglyphs can be seen as follows:|
+|
+        =  .           !   !|
+<-*  #  =  -  #  !@!  !---!|
+|
+            .           !  !|
+::  #  >*>  -  #  !@!  !--!
+Unnecessary page turning may destroy the book.
+ancient book
+This is what is left of the ancient Book of the Dead. Like the queen it once
+referred to, it too has seen better days.
+You'd do more damage putting things on the 
+ than it would be worth.
+The book isn't open. On the cover is the following, though:|
+|
+       =|
+       =
+You open the book carefully using the spatula. You can see some faint
+hieroglyphs written on the page.
+Oops! The ancient papyrus pages crumble due to your less-than-delicate touch.
+There's already something on it.
+The book now rests on the cover of the sarcophagus.
+From beneath each of the four statues there comes a loud click.
+small spatula
+This spatula was originally used for opening books and turning their pages.
+You lift the cover with great care, and in an instant you see all your dreams
+come true. The interior of the sracophagus is lined with gold, inset with
+jewels, glistening in your torchlight. The riches and their dazzling beauty
+overwhelms you. You take a deep breath, amazed that all of this is yours. You
+tremble with excitement, then realize the ground beneath your feet is
+trembling, too.|
+|
+Like a knife cuts through butter, this realization cuts through your mind,
+makes your hands shake and cold sweat appear on your forehead. The Burial
+Chamber is collapsing, the walls closing in. You will never get out of this
+pyramid alive. You earned this treasure. But it cost you your life.|
+|
+And as you sit there, gazing into the glistening wealth of the inner
+sarcophagus, you can't help but feel a little empty, a little foolish.
+If someone were on the other side of the quickly-collapsing wall, they could
+have dug you out. If only you'd treated the workers better. If only you'd cut
+Craige in on the find. If only you'd hired a reliable guide.|
+|
+Well, sometime, someone will discover your bones here. And then you
+will get your fame.
+DIAMOND for
+			      PYRAMID
+	(c) Copyright 1983 Infocom, Inc.  All Rights Reserved.
+
+DIAMOND AREA
+Room of Nephthys
+You have entered the room of the protective goddess Nephthys. The walls here
+are cut from pink granite, elaborately decorated with bright red carnelian and
+pale yellow feldspar. Along the northeast wall are panels of beaten gold, and
+midway up this wall, under the winged symbol of Nephthys, you can see some
+hieroglyphs. To the southeast, cut in the thick granite wall, is an opening.
+diamond cluster
+A large diamond cluster, glittering in your light, sits on the floor directly
+under the hieroglyphs.
+golden cluster
+A large golden cluster sits on the floor.
+ruby cluster
+A beautiful ruby cluster, sparkling like fire, sits on the floor.
+emerald cluster
+Lying on the ground is a brilliant, glowing emerald cluster.
+opal cluster
+Am opal cluster, glistening with the light of a thousand fires, lies on the
+floor.
+Room of Selkis
+You are standing in a small room, that of the protective goddess Selkis.
+There are red, blue and green patterns on the walls formed from small glazed
+tiles that have been carefully arranged in order of shade. The darkest tiles
+border the floor, and become lightest near the ceiling. On the northeast wall,
+inscribed in a beaten gold panel, is the symbol of Selkis, under which you can
+see some hieroglyphic text. An opening through the southwest wall leads out
+of this room.
+They twinkle in the light, making beautiful patterns.
+Room of Isis
+This is the room of the protective goddess Isis. You stand in amazement
+in the center of the room as thousands of tiny lights twinkle around you.
+With great surprise you realize that the light from your torch is being
+reflected by the mirror-like surfaces of innumerable clear quartzite chips.
+These are set artfully into red clay panels in the walls, and are surrounded
+by shiny red jasper fragments. On the southwest wall, under the winged symbol
+of Isis, some hieroglyphic text is inscribed in a gold panel. To the northeast
+is an arched opening, and, looking through it, you can barely make out a
+hallway.
+Room of Neith
+You are standing in the room of the protective goddess Neith. This room
+seems dark and mysterious with its decorations of inky-blue lapis lazuli
+and jet-black obsidian. Gold scrollwork defines an area on the southeast
+wall, in the center of which is the symbol of Neith. Below this you can
+see some hieroglyphs etched into a beaten gold panel. There is a door in
+the northwest wall leading out of the room.
+The gems are quite remarkable, forming a delicate piece of art. To remove
+any of them would be beyond thinking.
+They are quite remarkable, forming a delicate piece of art. To remove
+any of them would be beyond thinking.
+Circular Room
+You are in a strange, round room which sits in the center of four hallways.
+These hallways lead off to the northeast, southeast, southwest and northwest
+like the spokes of a wheel. Above your head is a long tunnel which stretches up
+and out of sight.
+There's no way to get back up there.
+As you peer down the dimly-lit hallways, you 
+see that the doors in all four hallways are balanced halfway open.
+notice that the door to the 
+ is closed, the one in the opposite hallway is all the way open, and the other
+two are halfway open.
+large statue
+Sitting in the middle of the floor is a large statue, which you judge to be
+about two feet shorter than you.
+It is carved out of dark gray basalt and its features resemble a woman at the
+height of her beauty, most probably the ancient queen. The statue itself must
+weigh more than you do.
+broken head
+This head was once part of the magnificent statue of the queen.
+The statue teeters, swaying and rocking back and forth, then falls over,
+its top-heavy structure striking the floor with an ear-ringing smash. As you
+look over the damage you see the head has separated from the statue.
+It's far too heavy.
+The statue rocks over and back on its back. Looks like it's headed nowhere
+fast.
+Haven't you done enough damage to that beautiful relic?
+The statue lies on the floor, its head broken off. In this state, the statue
+weighs a little less than you but it's still far too heavy to carry.
+Northwest Hallway
+You are standing in the middle of the Northwest Hallway. The walls here are
+smooth and undecorated, carved out of granite. The hallway continues to the
+northwest and to the southeast.
+There's no way to get through the stone door.
+You can't. It's got to weigh 50 tons.
+Northeast Hallway
+You are standing midway down the long Northeast Hallway. The high walls
+are undecorated, but bear the marks of the stonecarver's tool. The hallway
+continues to the northeast and the southwest.
+There's no way to get through the stone door.
+Southwest Hallway
+You are midway down the Southwest Hallway. The walls of this narrow passage
+are unadorned and smooth. The hallway continues to the southwest and the
+northeast.
+There's no way to get through the stone door.
+Southeast Hallway
+You are midway down the Southeast Hallway. This corridor is undecorated and
+the walls are polished to a smooth lustre. The hallway continues to the
+southeast and the northwest.
+There's no way to get through the stone door.
+starts @ 0, inc by 3
+As you enter the corridor, a huge stone door begins to slide down from the
+ceiling closing off any further progress. The closer you come to the door, the
+further down the door descends until, eventually, it is close to the floor.
+When you turn around, you can barely see beyond the Circular Room where an
+identical door has risen off the floor an equal amount.
+The path before you remains open, the stone door having risen to the ceiling,
+counterbalanced by the door in the opposite corridor.
+BARGE for
+			      PYRAMID
+	(c) Copyright 1983 Infocom, Inc.  All Rights Reserved.
+
+South Landing
+You are on a landing in the middle of a set of stairs. The staircase goes down
+to the south and up to the north. The walls here are undistinguished, formed by
+the stones of which the pyramid was built.
+Narrow Hallway
+You are at the entrance of a narrow hallway which goes to the northeast. A
+staircase goes up to the north.
+Narrow Hallway
+You are at a bend in the Narrow Hallway. The hallway continues to the
+northwest and to the southwest. Inscribed on the wall are some hieroglyphs.
+Barge Chamber
+You are in the southern section of a huge room which holds the royal barge.
+Before you, to the north, is a plank which provides entrance to the barge.
+There is room to move around the barge to the east and west, while a doorway
+to the southeast leads into a darkened corridor.
+Barge Chamber
+You are in the southeast corner of the Barge Chamber. There's enough room to
+bypass the stern of the barge and continue to the north. To the west you can
+see the entrance to the barge.
+Barge Chamber
+You're standing in the northeast corner of the Barge Chamber. You can get
+around the stern of the barge to the south, while there's enough room to
+continue around the barge to the west.
+Barge Chamber
+You're in the southwest corner of the Barge Chamber. You can still see the
+barge entrance to the east, while there's enough room to continue to the north,
+around the barge.
+Barge Chamber
+You're in the northwest corner of the Barge Chamber. You can see by your light
+that there's room enough to continue around the back of the barge by going to
+the east, while you can bypass the bow of the boat by going south.
+Barge Chamber
+You're at the start of a hallway which goes off to the north. To the south,
+directly behind you, is the back side of the barge. There's enough room to get
+around it to the east and west.
+These rooms are actually part of the barge itself.
+Center of Barge
+You are standing on the deck of an ancient wooden barge. Before you, cut into
+the deck, is a hole. To the south is a plank which leads down off the barge.
+You can see two cabins on the deck, one to the west and the other to the east.
+You are in the forward cabin aboard the barge. There's a doorway to the east
+leading out onto the deck.
+You are in the aft cabin aboard the barge. There's a door to the west which
+leads out to the deck, and a short ladder, permanently mounted to the deck,
+going down into the depths of the barge itself.
+You are below the deck of the barge in what looks like a huge hold. To the
+west you can see the hold continuing, while a ladder leads up and out from
+here.
+West End of Hold
+You are in the westmost portion of the hold, below the deck of the barge.
+On the north side of the hull is a small knothole about three feet down from
+the ceiling. Overhead you can see a hole going through the deck while, directly
+below this hole, on the deck by your feet, is a slot.
+A long wooden plank connects the barge and the entry area.
+The plank is a permanent part of the barge. To remove it might create far more
+destruction than you think.
+The barge immediately catches fire in a tremendous flash and, before you know
+it, you're heated to a toasty 1000 degrees. Not being made of asbestos has its
+disadvantages, as you quickly realize....
+Coming down through the hole above your head and ending in the slot at your
+feet is the beam which served as a mast.
+Lying on the deck of the barge is a long wooden beam.
+Before you, running down through a hole in the deck, is a sturdy beam made of
+wood. Although only a few feet of it rise above the deck, it was probably used
+at one time as a mast.
+I think the mast hole is already being used.
+You'd never squeeze through it.
+The mast is going through the hole.
+ drops through the hole.
+You try to reach up that high, but fail. The 
+ falls to the deck.
+There isn't room for the 
+ and the mast, too.
+All I can see is a 
+Through the knothole is inky blackness.
+A shim is wedged between the slot and the beam.
+The beam is resting in the slot.
+It's a small piece of wood, used as a wedge.
+wooden beam
+Before you, running down through a hole in the deck, is a sturdy beam made of
+wood. Although only a few feet of it rise above the deck, it was probably used
+at one time as a mast.
+This wooden beam is made of an extremely hard wood. It's 10 feet long and has
+a diameter of 12 inches. Scratched into it is the following symbol:|
+|
+     /!\
+Well, you were never very good at walking on air and so, with a scream on your
+lips, you plunge to a horrible death in a pit of voracious rats.
+How fitting -- to be trapped forever in the Burial Chamber, waiting slowly,
+painfully, for your oxygen to run out -- a true testimony to the brilliance of
+the Queen and her protection.
+The doorway suddenly closes as heavy, immovable stones crush in from both
+sides. You slowly and painfully suffocate in the Annex, cursing the Gods for
+ever revealing this horrible place to you.
+When you remove the beam, you remove the only thing between you and 3 heavy
+tons of solid rock, poised over your head. Knowing the situation, though, has
+saved your life and you leap out of the way just in time.
+The way into the Burial Chamber has been forever blocked by massive stones.
+The way into the Annex is forever blocked by huge, immovable stones.
+The doorway disappears behind two huge stones which slide horizontally from
+the doorway. Luckily, you stepped out of their way just in time.
+You are in the southern end of the Chamber of Eternal Royalty. From here you
+can see the room stretching out towards the north. The south wall is painted to
+resemble large baskets of lotus flowers with their blue petals framing an image
+of the Sun God, Amun Ra. The west wall once held a door but is now forever
+blocked.
+It's already been done.
+Consider it done.
+Taken. Oh oh....
+It seems to be securely wedged in the mast hole.
+You can't lift it that high over your head to get it out of the deck.
+It's wedged into the slot.
+The mast hole won't allow a steep enough angle for removing it.
+(getting off the beam first)
+Well, you were never very good walking on air and so, with a scream on your
+lips, you plunge to a horrible death in a pit of voracious rats.
+Done. The beam immediately falls to the floor, though.
+You're now standing on the ground.
+You try to raise the mast but it seems to be wedged into something.
+You'll need two hands to do that. Better put everything down.
+Lying on the deck of the barge is a long wooden beam.
+You have managed to lift the beam up through the hole and you hear it land on
+the deck with a thud.
+It's wedged too tightly in the slot.
+This piece of wood is virtually petrified due to its age and original strength.
+CASE: In N. Ante, beam wedged
+Wedged under the top of the doorway, perpendicular to the floor, is the wooden
+beam.
+Stretching across the floor from niche to niche
+, spanning a deep pit,
+ is the wooden beam.
+ You are standing on the beam.
+Through the doorway you can see the beam spanning the pit.
+Case: S. Ante, wedged beam
+Wedged between the 
+, from side to side, is the stout beam.
+papyrus scroll
+Sitting on the deck is a papyrus scroll.
+This scroll was placed here for the Queen's passage to the afterlife.
+The scroll reads as follows:|
+|
+*->  <.>  <:.>  ...  <::.>|
+|
+::  :  **  --->>  -)  (*)
+CUBE for
+			      PYRAMID
+	(c) Copyright 1983 Infocom, Inc.  All Rights Reserved.
+
+You are in a room whose symmetry is uncanny, at least to the unaided eye: the
+dimensions of the room seem to form a perfect cube. There are three square
+doorways cut into the walls -- one to the north, and another to the west. A
+wide staircase leads up through the square doorway to the east.
+You are in a room whose walls, floor and ceiling seem to form a perfect cube.
+There are four square doorways cut into the walls -- to the north, the south,
+the east and the west. Through the west doorway you can see a flight of stairs
+heading up.
+You are in a room whose dimensions seem to measure a perfect cube. On the
+floor of this room is a series of symbols, inscribed in the stone. The walls
+bear strange pictures of a queen, one of which shows her being wrapped in
+linen, another one showing her being lowered into what appears to be a solid
+gold sarcophagus. Four identical square doorways lead out of this chamber to
+the north, south, east and west.
+You are in a room in the shape of a perfect cube. There are three square
+doorways cut into the walls -- one to the west, one to the east, and another
+to the south.
+You are in a room whose symmetry is uncanny, at least to the unaided eye: the
+dimensions of the room seem to form a perfect cube. There are two square
+doorways cut into the walls -- one to the north, and another to the west.
+A panel, recessed into the south wall, glows softly in your reflected light,
+while some hieroglyphs are visible on the wall.
+You can't go that way.
+You are in a room whose symmetry is uncanny, at least to the unaided eye: the
+dimensions of the room seem to form a perfect cube. There are two square
+doorways cut into the walls -- one to the north, and another to the east. The
+uncannily-shaped room seems to form a corner for this entire area.
+You are in a room whose dimensions seem to form a perfect cube. There are two
+square doorways cut into the walls -- one to the south, and another to the
+west. This room seems to form a corner for this entire area.
+You are in a room whose shape is that of a perfect cube. There are two square
+doorways cut into the walls -- one to the south, and another to the east.
+Turning Passage
+You are in a strange, turning passageway. The floor here descends, reminding
+you of a ramp, and turns off toward the north. Judging from what you remember
+of the cube rooms, the ramp most probably passes beneath the ascending east
+staircase. Through the open doorway to the west you can still see one of the
+cube rooms.
+Connection to ANTE
+recessed panel
+-----------------------------
+!                           !
+It won't fit in there.
+ recessed into the panel
+, three rows by three columns. These bricks look as if they could be easily
+removed and are marked with numerical symbols.
+first brick
+ninth brick
+eighth brick
+seventh brick
+sixth brick
+fifth brick
+fourth brick
+third brick
+second brick
+As soon as you grasp this brick a square doorway swings open making eastern
+movement from this cube room possible.
+You are in a cubicle-room whose walls, floor and ceiling are of an
+identical size. There are three square doorways cut into the walls --
+to the north, to the west, and a newly opened one to the east. Engraved
+in the center of the floor are some hieroglyphs, while a panel, recessed in
+the east wall, glows softly in your reflected light.
+CAMP for
+			      PYRAMID
+	(c) Copyright 1983 Infocom, Inc.  All Rights Reserved.
+
+Hmmm. Looks potable. And dangerous.
+floats away on the current
+They're thick. What else can I say about them?
+blackened rock
+Sitting by the firepit is a matchbook.
+There's no need to get yourself all dirty.
+The pit's just a pit. Nothing more. 
+Sitting in the pit is 
+The pit is empty
+Looks like a canvas tent to me.
+Get serious.
+I can't see it from here!
+I don't think that striking the tent would do any good.
+Get serious.
+What are those canvas walls around you? Just where do you think you are?
+You can't enter the tent from here.
+There's not much to see of it yet -- just the tip of it is exposed showing the
+block and its small opening.
+You can see down into what looks like a large chamber.
+You can't see any pyramid here.
+Where do you think you are, Times Square?
+The stone blocks don't move.
+It looks open to me.
+You hear the 
+ fall down below.
+Get serious. Let's find it first.
+You can't enter the pyramid from here.
+You are on the bank of the river Nile. The shoreline is sandy and cool, and
+reeds wave in a light but warm breeze. Directly to the north and the south
+thickets make strolling along the bank impossible. You're hot, and the cool
+rippling water to the west looks inviting, but you're not alone in that
+thought -- crocodiles bask on the west bank, eyeing you hungrily, just
+waiting for you to enter their watery domain.
+The thickets chew on your skin as you attempt to make a path through them. You finally give up.
+The thickets chew on your skin as you attempt to make a path through them. You finally give up.
+Can't you see the crocs? If you insist on entering the water, you'll have to swim.
+Can't you see the crocs? If you insist on entering the water, you'll have to swim.
+Can't you see the crocs? If you insist on entering the water, you'll have to swim.
+Near the Nile
+You are on an east/west path on the north side of the encampment. A path to
+the south starts here, and you can see the riverbank clearly to the west. A
+warm, light breeze reaches your face, drying your sweat into a thin mask of
+salt. You glance to the north and are greeted by a disheartening sight: an
+endless stretch of searing desert.
+Some thickets near the river chew on your skin as you attempt to make a path through them. You finally give up.
+Outside Your Tent
+You are on an east/west path on the north side of the encampment. To the south
+you can see a firepit and to the north is the entrance to your tent. Everything
+is oddly quiet, unsettling, creating a feeling of floating anxiety. The
+stillness seems to enhance the eerie quality of the desert, the feeling of
+being truly alone.
+You are in your tent. Golden rays of the sun filter through the open tent
+flaps on the southern wall, but no breeze makes its way through. The dry,
+searing heat in the tent would be bearable if only the air stirred, even a
+little.
+Northern Path
+You are on an east/west path on the northern side of the encampment. To the
+east you can see the sites of previous excavations you and your party had
+begun before they deserted you. Low, gentle sand dunes roll out of sight to
+north, but your camp's eastern border has a path, heading off to the south,
+which starts here.
+Supply Tent
+You are in a tent, very much like your own -- a tent which had originally
+contained the supplies for your expedition. You notice, however, that most of
+the items which were here just yesterday have vanished with your party. The
+tent looks as if it's been cleaned out and, as your stomach growls, the empty
+tent ironically reminds you of a turkey carcass picked clean after a huge
+Thanksgiving meal. Through the open tent flaps to the east you can see the
+firepit.
+Outside Supply Tent
+You're on a north/south path on the west edge of the encampment. Directly to
+the west is the supply tent, its flaps open, still in the hot, quiet air. To
+the east you can see the central firepit, a reminder of your being alone. A row
+of thickets, impossible to make any progress through even with a machete,
+grows along the western edge of the camp directly to the north and south of the
+tent.
+The thickets chew on your skin as you attempt to make a path through them. You finally give up.
+The thickets chew on your skin as you attempt to make a path through them. You finally give up.
+You are in the center of the encampment, standing before a charred pit, a hole
+dug in the sand surrounded by blackened rocks. The night breezes have already
+started the reclamation work of the desert, covering most of the pit's bottom.
+You can see your tent to the north, the work tent to the south, and the supply
+tent to the west. Far off to the east, through the heat waves rising off the
+shifting sands, you can see gentle, rolling dunes.
+Middle Path
+You are at the eastern edge of an east/west path in the middle of the camp.
+To the west you can see the firepit and beyond that the supply tent. To the
+east you can see the desert -- a vista difficult to avoid seeing from just
+about anywhere in the camp. A north/south path intersects here, traveling along
+the eastern border of the camp.
+Southern Path
+You are at the west edge of an east/west path on the southern side of the
+encampment. Directly to the west is a heavy growth of thickets, making any
+attempt at western movement a painful and futile task. Through the thickets you
+can hear the sound of water running gently by.
+You scratch yourself on the thickets as you attempt this.
+You scratch yourself on the thickets as you attempt this.
+Outside Work Tent
+You are on an east/west path, directly to the north of the work tent. To the
+north you can see the firepit and, beyond that, your tent. The work tent
+borders an endless vista of fine, burning sand stretching out to the south.
+Southern Path
+You are at the start of a path which heads north along the eastern border of
+the encampment. To the east you can see the horror and the beauty which brought
+you here, the desert sand and its hidden treasure. The firepit is visible to
+the northwest.
+You are in a tent which used to house the workers, several of your partners,
+and their personal effects. Looking around, taking in the stripped and bare
+surroundings, you feel surprised that they even left the canvas walls. You
+quickly realize that they took what they needed -- taking everything would have
+been more trouble than it was worth. From the looks of things they cleared out
+quickly but quietly.
+You are in the broiling sands of the desert, a short distance from the camp.
+Off to the west you can just make out a slight discoloration in the sand, the
+start of an east/west path which borders the northern edge of the camp.
+You are in the desert, almost out of sight of the encampment, your only link
+with civilization. You are just close enough to make out a tiny dot on the
+western horizon which could be one of the tents. The searing sand is making
+walking a difficult and painful experience.
+You are deep in desert, the encampment little more than a memory. You think
+for a moment, closing your eyes, trying to picture the coolness of the Nile,
+the comfort of your cot, and are overcome with doubts. When you open your eyes
+again you are greeted with the same nightmare: All around you, all you can see
+for mile after mile is sand and more sand.
+You are in the desert, still within sight of the encampment, now just a tiny
+oasis to the west. The tents, shimmering behind the heat waves rising from the
+sand, seem to be calling you back, beckoning, offering safety and refuge.
+You are standing on the top of a sand dune, looking all around at a place on
+Earth where man was never meant to be. That is the only conclusion you can draw
+as you force yourself to breathe the hot, arid air of the desert through your
+nose. Breathing through your mouth makes you instantly thirsty, a dangerous
+state to find yourself in while surrounded by sand.
+You are deep into the desert, as deep as anyone in his right mind would ever
+care to venture. A small but strong gust of wind reaches your face, pelting you
+with grains of sand so small they remind you of fine sugar. Even with your lips
+tightly closed, the wind manages to drive a few grains into your mouth. You are
+thankful that none got into your eyes.
+You are in the desert, east of the encampment. From this distance the camp
+seems little more than a mirage, an image of another reality which has little
+to do with the brutal, searing reality of the desert, your quickly dehydrating
+body, or your painfully broiling feet.
+You are in the desert, out of sight of the encampment. You are thankful
+there's no wind, even though a cooling breeze would be welcomed, since the
+fine sand particles would sting your face and hands. All around is the desert,
+a sweeping expanse of disheartening sand.
+You are far into the desert, sand and more sand stretching out endlessly
+around you in all directions. You think of going back, of giving up this
+attempt at riches, but what awaits you back in the States? What is there worth
+going back to, with nothing to show for this lifelong quest? You glance around
+at the rolling dunes and force back the fear eating away your confidence.
+ in the sand, a remnant of your excavation attempts.
+ small hole
+n enlarged hole
+ sizable hole
+ knee-deep hole
+You hear a whirring overhead and look up in time to see a gyrocopter settling
+to the sand on the horizon.
+You think you see a spaceship settling on the horizon and, as you strain your
+eyes through the wafting waves of heat, you see a man and a huge robot. You can
+almost hear them saying "Gort, Klaatu Barada Nikto."
+A small lizard pokes its head up from the sands and asks the shortest route to
+Times Square. You scratch your head for a moment and when you remember the
+proper subway line to recommend to it, you notice it's disappeared.
+Five maids amilking sit on sandy stools before you, grinning maniacally.
+A large rainbow trout walks by, holding a pet snail on a leash.
+A strong gust of wind kicks up a herd of buffalo on the horizon. You think it
+strange that the buffalo are riding sidesaddle.
+Far off in the distance, dancing on the horizon, you see a shimmering oasis.
+A cool pool of water seems to dance in the heat waves just a mile away.
+A caravan of camels, led by a nomadic tribe, wanders a few miles off.
+You wipe your sweating brow, gazing off into the distance, and notice a cool,
+crystal-clear lake glimmering on the horizon, just to the north.
+The opening sits in the upper right-hand corner of the block. It's a small
+square opening, about four square inches in size, far too small for you
+to enter, and rather shallow. Some hieroglyphs travel across the block,
+cut off by the opening:|
+|
+       !-!        !-!|
+->  #.  ! !  -  #  ! !  /
+I think the opening is a little too small to get through.
+It's too bulky and unstable a structure to be carrying around.
+Where do you think you are?
+This is no time for sitting down on the job!
+It's just an army cot.
+ And you're in it!
+ Sitting on the cot 
+Don't you think it would be wise to get out of the cot first?
+You'd better take everything off of it first.
+It's already unfolded.
+You'd better get out of the cot first.
+Better put it down first.
+Hmmm. Seems like you beat yourself to it. It's already folded up.
+Sitting by a rock is what looks like a matchbook.
+You'd better open the matchbook first.
+The inside says: Send away now!! Mushrooms can be taught a foreign
+language, and make fine pets! Easy to feed and they can be walked on a leash!
+Read and fill out the enclosed coupon now!
+Printed on the outside is a small coupon for an instruction manual,
+"GROW MUSHROOMS IN YOUR BASEMENT FOR FUN & PROFIT". Close Before
+Striking.
+One match at a time, eh?
+few matches
+single match
+burned matchbook
+Why? There's no matches left in the matchbook.
+There's no match to light!
+I see no match here.
+You're not holding the match.
+The match disappears somewhere beneath the cot.
+The current of the river sweeps it away.
+The match, however, is quickly lost in the sand.
+The match, however, is lost between the wooden decking.
+The match flutters down into the abyss.
+The match falls into a crack in the stone floor, lost forever.
+You're already holding one.
+Well, I tried, but the match seems to have missed the mark entirely.
+One match at a time!
+Sure. As soon as a postman walks by, I'd be glad to give the coupon to him.
+The coupon for the manual is as clear as any coupon ever was:|
+|
+Fill in Last Name first, unless First Name is Last. Check the box beside
+the dotted line unless you want the manual shipped via alternate shipping.
+Include your address unless your mailing address and shipping address differ
+from your postal delivery route. If you are having the manual air-freighted,
+fill in your airport's zip code unless you're within thirty miles of a large
+corn field. After checking whether that box has been checked, check it.
+|
+Before you mail this, be certain you've read the instructions and have filled
+out all three sides of the form. In case of doubt, contact the Coupon
+Customer Service Department, 122 East Accardi Street, Youknow, Alaska.
+If you live west of the Atlantic or the Pacific, this offer is
+null and void except where prohibited by law.
+There's not much to read unless you're holding the matchbook.
+It tries valiantly to burn, but the inside of it is made of foil, and you
+manage to burn your fingertips instead of the package.
+burned wrapper
+There's not much left to the outside of this package that's distinguishable.
+cigarette pack
+Half covered with sand is a bright piece of foil which catches your eye.
+It's an empty pack of Camel cigarettes.
+broken lock
+This is a slightly messed-up lock which once functioned. Alas, it has seen
+better days.
+At the foot of the cot is a large, unwieldy trunk.
+A large, unwieldy trunk sits on the sand.
+ The trunk is closed and locked with a padlock.
+ The trunk is closed with a broken padlock.
+A padlock holds it shut.
+You'd better remove the broken lock first.
+You don't have a key.
+It's an old steamer trunk, very heavy and too clumsy to carry for one person.
+You can't. It's locked.
+The padlock breaks open.
+You'll have to hit the lock with something stronger.
+It's locked.
+It's made of hardened steel and is very sturdy. It's also very locked.
+Stuck in the sand, handle down, is a small pick axe.
+It's a small hand axe, similar to those used in mountain climbing.
+This is a small stone cube, almost four inches on a side, with ancient
+markings on it. The markings look like this:|
+|
+#  !@!  ::  (())  !@!  //\\
+The ancient stones beneath your feet shake and tremble as they move the sands.
+You leap out of the way and manage to avoid being sucked down into the vortex.
+Through the sands, an entrance down into the pyramid is revealed.
+You are in the desert at a site of successful excavation. Beneath you lies the
+open pyramid, its stone door at last open. The desert is all around you, but
+down there lie the secrets of the ages.
+piece of dried beef
+ancient map
+You're not carrying the map.
+You'd better unfold it first.
+This is a reproduction of the map the Professor made while on his expedition.
+It indicates where he hoped to find the lost pyramid. It is included in your
+game package.
+Taken. It feels fairly heavy, though, as though it were folded around
+something solid.
+Half buried in the sand, in the corner of the tent, is a shovel.
+It's a standard-issue garden shovel.
+This rope is made of the finest Manila hemp and guaranteed to hold at least
+250 pounds of weight. There's about thirty feet of it.
+Descending from above is the end of a long rope.
+ It travels down into the darkness.
+It's already tied to the 
+The rope has been tied to the 
+That's cute. It's not tied!
+(free end of rope)
+It seems to be tied to something up overhead.
+The rope is securely fastened to the altar.
+The rope descends into the 
+The rope doesn't go up.
+farewell note
+Tacked up to the inside of one of the tent flaps is a note.
+The note reads:|
+|
+Fi aman Allah!
+|
+Hereafter you shall pursue your fool dream of the hidden pyramid and its riches
+alone. May the jackals feed well on your bones. We have left you what you need
+to get back, though we hope you do not. We put several things you treasure
+above life itself inside your trunk, locked with your precious padlock, but we
+could not bear to part with the key. Especially after what you said of our
+rites. We hope the drug we placed in your drink did you harm. If not, we are at
+least satisfied you slept especially soundly while we cleaned out the camp.|
+|
+Farewell
+quantity of water
+quantity of water
+Some water sloshes around inside.
+Some sand shakes around inside.
+It's empty.
+All the water spills out and quickly evaporates.
+You empty the canteen of most of the sand.
+Okay, but shaking an empty canteen will get you nowhere fast.
+I see no sand here.
+It would help if you opened the canteen first.
+Okay. The canteen has been filled with sand.
+ So much for the water that was left in it.
+inspection sticker
+The small inspection sticker says:
+|
+This trunk inspected by numbers 8 and 6.5. This reality was manufactured by
+tiny elves from the Bozbar Pyramid Construction Company, a jointly-owned
+subsidiary of the FrobozzCo Magic Village Industries, Michael Berlyn and
+Patricia Fogleman, Chief Engineers.
+You are in the desert, a vast wasteland of sand and heat.
+Without a helicopter?
+Let's not rush things.
+Come on! Don't waste your life on illusions.
+A brief but strong gust of wind comes up off a dune, whipping sand in your
+face, blinding you for long enough to lose track of the 
+length should be 2*number of takeable objects
+WARNING: The Surgeon General has determined that wandering about like this is
+dangerous to your health.
+You start dropping things to lighten your load. Before you know it, you're
+empty-handed. A gust of wind comes up off the dune before you, covering over
+what you've dropped. So much for that.
+quantity of sand
+Sitting in the sand, bulging a little, is a beaten-up knapsack.
+(wearing it)
+You swing the knapsack over your shoulders and it settles on your back as its
+cover flap closes.
+Sure. Just like a Klein Bottle, eh?
+You take the knapsack off and place it on the 
+. As it settles on
+the 
+, the cover flaps open.
+You reach around behind to lift the flap on the top of the knapsack, but it
+keeps falling back down.
+Better take it off first. Unless you want to do a few headstands.
+It's on your back!
+Your neck doesn't crane back that far. Better take it off first.
+You weren't wearing it!
+You take the knapsack off and place it on the ground. As it settles on the
+ground, the cover flaps open.
+You already have it.
+Don't you think you should put out the 
+That's like trying to fit a Beethoven Symphony into a music box.
+It would only seep through the roughly-stitched seams, so why bother?
+Your arms don't reach back that far, and groping around in the sack isn't the
+best of ideas. It would help if you took it off first.
+The knapsack isn't open.
+packing crate
+Lying in the sand is a wooden packing crate.
+The crate is slightly beaten up from the landing, but it seems to have held
+together fairly well. There's a small label on it that says "This crate
+contains 1 (one) black box (tm)."
+It's coming down, and it looks like it should land near you!
+I think you've got crates on the mind!
+Wood chips fly from the crate, hurtling into the sand all around, as the crate
+suffers your frenzied attack. The defenseless packing crate looks as if to flee
+but before it can react (growing legs is a time-consuming task) there is
+nothing left of it but a mere memory. (You really should seek some
+psychological counselling.)
+You're going to need some gasoline or something to make this baby catch on
+fire.
+You couldn't fit in there unless you put yourself through a trash compacter.
+Hey, give it a chance to get here. I know you're impatient to get on with
+this, but be reasonable!
+The crate opens slowly, the boards creaking with the strain.
+Thirty (30) slots to hold objects in the crate
+navigation box
+This is an expensive, state-of-the-art piece of electronic equipment. It was
+designed to automatically determine longitude and latitude when the button on
+it is pressed. Thankfully, it has at last arrived.
+To do that to the 
+ would most probably
+ruin the delicate equipment inside.
+I didn't know it was open.
+It turns itself off after each button press.
+Rattle, rattle, jostle, crunch. Oh oh...
+Crinkle fweep
+Bleeeeeeeeeep
+Screetchle frop
+Breeble grungle
+The box comes to life, its L.E.D.s lighting, and then flashes 
+ seconds N latitude, 
+ seconds E longitude.
+There's no need for that here. It's obvious where you are.
+The box comes to life, its L.E.D.s lighting, and then flashes 24 degrees 11
+minutes 
+ seconds N latitude, 32 degrees 12 minutes 
+ seconds E longitude.
+It's on the top of the box.
+(opening matchbook first)
+ Loc    Long   Lat    seconds only!
+TEMPLE for
+			      PYRAMID
+	(c) Copyright 1983 Infocom, Inc.  All Rights Reserved.
+
+TEMPLE--This is the file for the Temple area, the passage(s) leading
+to it, and any objects found there. TEMPLE will articulate with the
+BARGE area.
+Steep Passageway
+You are at the top of a steep, descending passage that plunges down to the
+north. Although the angle is steep, it looks as if you should have firm enough
+footing to travel safely. From the angle, it appears as though the passage
+is actually leaving the pyramid, cutting down through the sand high overhead
+to an adjoining building.
+Articulates with BARGE area here
+Steep Passageway
+You are about midway down a steep, descending, north/south passageway which
+seems to lead out of the pyramid to the north. The walls of stone are polished
+and as smooth as glass, glistening in your light, lighting the passage far to
+the north and the south.
+Steep Passageway
+You are at the north end of a descending passageway. You can see the smoothly
+polished passageway rising up and out of sight to the south, heading back into
+the pyramid. A large doorway cut into the stone walls lies to the north and,
+through it, you can see an immense chamber.
+Temple Chamber
+You are in a huge chamber, immense in its size and scope, especially since it
+is far underground. Your light seems to climb and fall from the high walls,
+making their top boundaries undefined as they melt into inky darkness,
+flickering into the unknown reaches high overhead. There is a huge doorway
+carved out of the south wall, the arch at its top barely discernable in your
+light. To the north is a similar doorway, slightly scaled down, with pillars on
+either side of it, their shadows playing strange tricks on the wall behind
+them. You can just barely make out the paintings on the walls, pictures of the
+ancient queen, her servants, and the priests in attendance.
+Inner Chamber
+You are in the temple's inner chamber. The ceiling here is lower, low enough
+for your light to reach it. There are openings in the east and west walls, and
+a large, arched doorway to the south. The walls are covered with paintings,
+most of which depict the queen in different stages of preparation for her trip
+on the royal barge. One in particular, larger than any of the others, shows the
+queen and all of her attendants aboard the barge, floating through the air on
+their way to the netherworld. There are some detailed hieroglyphs on one of the
+walls.
+Golden Room
+You are in a room whose walls are covered with gold leaf. Your light reflects
+off the walls with a rich, warm tone and reveal the outlines of hieroglyphics
+engraved in the gold itself. There is a doorway cut into the south wall and,
+through the reflected light, you can tell it leads into a small chamber. There
+is another doorway leading out to the east.
+glittering leaf
+The walls are covered with it. And it's very beautiful.
+Golden Alcove
+You are in a small alcove off the Golden Room. Sitting in the middle of this
+small room is a roughly-hewn slab of granite, much like a legless table.
+Silver Room
+You are in the Silver Chamber, a room whose walls reflect your light
+brilliantly due to their silver surface. A doorway leads west and out, while
+another doorway leads into a smaller room to the south.
+Silver Alcove
+You are in a small alcove off the Silver Room. Sitting in the middle of this
+small room is a roughly-hewn slab of granite, much like a legless table.
+granite table
+golden chalice
+Sitting in the middle of the granite table is a gleaming chalice made
+of gold.
+The cup is heavier than you thought it might be. The outside of it is
+beautifully etched with scenes of the queen and her handmaidens.
+silver chalice
+There's a thin line etched inside the chalice which travels all the way
+around it. The chalice is not very heavy.
+Sitting in the middle of the granite table is a chalice made of gleaming silver.
+The line goes around the interior of the silver cup.
+I can't see any 
+oily liquid
+ fills the cup up to the line.
+Taken. Hmmm... the 
+ is lighter than the golden one.
+Taken. Hmmm... the 
+ is heavier than the silver one.
+granite table
+There's nothing on the table.
+There's nothing on the table.
+Lying before you in tortured repose are the bony remains of a former
+adventurer, someone who tried looting the pyramid long, long ago. As you bend
+over to pay your respects, something glitters, catching your eye as you move
+your head.
+If you tried to take the skeleton it would fall apart, bone by bone.
+On the bony digits of one hand is a jeweled ring.
+I see nothing special about the 
+calcified hand
+jeweled ring
+At first glance, you are overwhelmed with the beauty and richness of the ring.
+On close examination you notice the ring has a tiny needle on the inside of
+the band.
+Ouch! It seems you've pricked your finger while putting on the ring.
+Lying before you in tortured repose are the bony remains of a former adventurer.
+Lying before you in tortured repose are the bony remains of a former adventurer.
+It's stuck on your finger.
+tiny needle
+Inside the band is a small needle set at an angle designed to pierce the skin.
+You prick your finger on the tiny needle sticking out from the inside of the
+ring.
+It smells very faintly of almonds.
+Ugh! It tastes terrible!|
+|
+You stand there in horrified amazement, feeling the poison creeping down your
+throat and acting on your body almost instantaneously. Time to shuffle off...

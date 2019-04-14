@@ -198,6 +198,7 @@ see one of the cube rooms.")
 ", three rows by three columns. These bricks look as if they could be easily
 removed and are marked with numerical symbols." CR>)>
 		<CRLF>
+		<FIXED-FONT-ON>
 		<TELL ,DASH-STR CR>
 		<TELL ,EX-SP-EX-STR CR>
 		<TELL "!  ">
@@ -243,6 +244,7 @@ removed and are marked with numerical symbols." CR>)>
 		<TELL "  !" CR>
 		<TELL ,EX-SP-EX-STR CR>
 		<TELL ,DASH-STR CR>
+		<FIXED-FONT-OFF>
 		<RTRUE>)
 	       (<VERB? OPEN CLOSE>
 		<HOW? ,PUNCH-PANEL>
@@ -351,7 +353,12 @@ removed and are marked with numerical symbols." CR>)>
 <GLOBAL WRONG-BRICK <>>
 
 <ROUTINE TAKE-BRICK-FCN ()
-	 <COND (<AND <VERB? PUT>
+	<COND (<VERB? EXAMINE READ>
+	       <FIXED-FONT-ON>
+	       <TELL <GETP ,PRSO ,P?TEXT> CR>
+	       <FIXED-FONT-OFF>
+	       <RTRUE>)
+	      (<AND <VERB? PUT>
 		     <EQUAL? ,PRSI ,PUNCH-PANEL>>
 		<FSET ,PRSO ,NDESCBIT>
 		<SETG BRICKS-TAKEN <- ,BRICKS-TAKEN 1>>

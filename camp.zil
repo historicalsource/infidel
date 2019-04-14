@@ -846,18 +846,24 @@ crystal-clear lake glimmering on the horizon, just to the north.">>
 	(ADJECTIVE SQUARE)
 	(CAPACITY 5)
 	(MAP 3)
-	(TEXT
+	(ACTION ENTER-OPENING-FCN)>
+
+<ROUTINE ENTER-OPENING-FCN ()
+	 <COND (<VERB? EXAMINE READ>
+		<TELL
 "The opening sits in the upper right-hand corner of the block. It's a small
 square opening, about four inches square, far too small for you
 to enter, and rather shallow. Some hieroglyphs travel across the block,
 cut off by the opening:|
-|
+">
+		<FIXED-FONT-ON>
+		<TELL "|
        !-!        !-!|
-->  #.  ! !  -  #  ! !  /")
-	(ACTION ENTER-OPENING-FCN)>
-
-<ROUTINE ENTER-OPENING-FCN ()
-	 <COND (<VERB? OPEN CLOSE>
+->  #.  ! !  -  #  ! !  /|
+">
+		<FIXED-FONT-OFF>
+		<RTRUE>)
+	       (<VERB? OPEN CLOSE>
 		<HOW? ,PRSO>)
 	       (<VERB? THROUGH>
 		<TELL
@@ -1171,7 +1177,7 @@ the dotted line unless you want the manual shipped via alternate shipping.
 Include your address unless your mailing address and shipping address differ
 from your postal delivery route. If you are having the manual air-freighted,
 fill in your airport's zip code unless you're within thirty miles of a large
-corn field. After checking whether that box has been checked, check it.
+corn field. After checking whether that box has been checked, check it.|
 |
 Before you mail this, be certain you've read the instructions and have filled
 out all three sides of the form. In case of doubt, contact the Coupon
@@ -1347,11 +1353,6 @@ personality, it has seen better days.")>
 	(IN MAP)
 	(FLAGS TAKEBIT READBIT)
 	(DESC "stone cube")
-	(TEXT
-"This is a small stone cube, almost four inches on a side, with ancient
-markings on it. The markings look like this:|
-|
-#  !@!  ::  (())  !@!  //\\\\")
 	(SYNONYM CUBE)
 	(MAP 3)
 	(ADJECTIVE SMALL STONE)
@@ -1360,7 +1361,18 @@ markings on it. The markings look like this:|
 <GLOBAL PYRAMID-OPENED <>>
 
 <ROUTINE STONE-KEY-FCN ()
-	 <COND (<AND <VERB? PUT>
+	 <COND (<VERB? EXAMINE READ>
+		<TELL
+"This is a small stone cube, almost four inches on a side, with ancient
+markings on it. The markings look like this:|
+">
+		<FIXED-FONT-ON>
+		<TELL "|
+#  !@!  ::  (())  !@!  //\\\\|
+">
+		<FIXED-FONT-OFF>
+		<RTRUE>)
+	       (<AND <VERB? PUT>
 		     <EQUAL? ,PRSI ,ROCK-LOCK>>
 		<TELL "The ancient stones beneath your feet shake and
 tremble as they move the sands. You leap out of the way and manage to
@@ -1545,7 +1557,7 @@ didn't hang you with it.")
 	(TEXT
 "The note reads:|
 |
-Fi aman Allah!
+Fi aman Allah!|
 |
 Hereafter you shall pursue your fool dream of the hidden pyramid and its riches
 alone. May the jackals feed well on your bones. We have left you what you need
@@ -1736,8 +1748,9 @@ face, blinding you for long enough to lose track of the " D ,PRSO "." CR>
 	       656 EX3 706 EX6 751 P6 752 P7 753 P8
 	       754 EX7 755 EX8 756 EX9>>
 
-<ROUTINE DESERT-TO-TABLE (SLOC "AUX" (TBL ,DESERT-TABLE) (CNT 0)
+<ROUTINE DESERT-TO-TABLE (SLOC "AUX" TBL (CNT 0)
 			  (F <FIRST? ,ENDLESS-DESERT>) N)
+	 <SET TBL ,DESERT-TABLE>
 	 <REPEAT ()
 		 <COND (.F <SET N <NEXT? .F>>)
 		       (ELSE <RETURN>)>
@@ -1755,7 +1768,8 @@ face, blinding you for long enough to lose track of the " D ,PRSO "." CR>
 		 <SET F .N>>>
 
 <ROUTINE TABLE-TO-DESERT (SLOC
-			 "AUX" (TBL ,DESERT-TABLE) (CNT 0))
+			 "AUX" TBL (CNT 0))
+	 <SET TBL ,DESERT-TABLE>
 	 <REPEAT ()
 		 <COND (<NOT <L? .CNT 100>>
 			<RETURN>)

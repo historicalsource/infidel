@@ -371,11 +371,6 @@ wood. Although only a few feet of it rise above the deck, it was probably used
 at one time as a mast.")
 	(SYNONYM BEAM MAST)
 	(ADJECTIVE WOODEN STURDY)
-	(TEXT
-"This wooden beam is made of an extremely hard wood. It's 10 feet long and has
-a diameter of 12 inches. Scratched into it is the following symbol:|
-|
-     /!\\")
 	(SIZE 10)
 	(VALUE 15)
 	(ACTION BEAM-FCN)
@@ -598,7 +593,18 @@ the deck with a thud." CR>)>)
 	       >>
 
 <ROUTINE DESCRIBE-BEAM-FCN (RARG "AUX" STR)
-	 <COND (<OR <NOT <EQUAL? .RARG ,M-OBJDESC>>
+	 <COND (<VERB? EXAMINE READ>
+		<TELL
+"This wooden beam is made of an extremely hard wood. It's 10 feet long and has
+a diameter of 12 inches. Scratched into it is the following symbol:|
+">
+		<FIXED-FONT-ON>
+		<TELL "|
+     /!\\|
+">
+		<FIXED-FONT-OFF>
+		<RTRUE>)
+	       (<OR <NOT <EQUAL? .RARG ,M-OBJDESC>>
 		    <NOT ,BEAM-PLACED>>
 		<RFALSE>)
 	       (<EQUAL? ,BEAM-PLACED 4> ;"CASE: In N. Ante, beam wedged"
@@ -647,10 +653,13 @@ beam." CR>
 		<RFALSE>)>
 	 <TELL
 "The scroll reads as follows:|
-|
+">
+	 <FIXED-FONT-ON>
+	 <TELL "|
 *->  <.>  <:.>  ...  <::.>|
 |
 ::  :  **  --->>  -)  (*)" CR>
+	 <FIXED-FONT-OFF>
 	 <RTRUE>>
 
 ;<ROUTINE CLEAR-THE-BEAM ("AUX" F N (FLG <>) STR)

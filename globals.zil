@@ -565,31 +565,45 @@ will be too." CR>)
 	(ADJECTIVE STRANGE)
 	(ACTION HIERO-FCN)>
 
+<ROUTINE FIXED-FONT-ON () <PUT 0 8 <BOR <GET 0 8> 2>>>
+
+<ROUTINE FIXED-FONT-OFF() <PUT 0 8 <BAND <GET 0 8> -3>>>
+
+<ROUTINE PLASTER1-GLYPHS ()
+	<FIXED-FONT-ON>
+	<TELL CR "*->  #  !!!  ::  ...>  .-" CR>
+	<FIXED-FONT-OFF>>
+
 <ROUTINE HIERO-FCN ("AUX" TEMP (COUNTER 0) OFFSET)
 	 <COND (<NOT <VERB? READ EXAMINE>>
 		<RFALSE>)>
 	 <COND (<AND <IN? ,WINNER ,STAIRS-BOTTOM>
 		     <IN? ,PLASTER1 ,STAIRS-BOTTOM>>
-		<TELL CR
-"*->  #  !!!  ::  ...>  .-" CR>)
+		<PLASTER1-GLYPHS>
+		<RTRUE>)
 	       (<IN? ,WINNER ,WEST-END-OF-PASSAGE>
 		<COND (<FSET? ,PIT ,INVISIBLE>
+		       <FIXED-FONT-ON>
 		       <TELL CR
 "             .|
 <-*  #  /!\\  -  #  (=  =)|
 |
-::  *->  #  !!!" CR>)
+::  *->  #  !!!" CR>
+		       <FIXED-FONT-OFF>)
 		      (T
 		       <TELL "They're gone with the plaster." CR>)>)
 	       (<AND <ROOM? ,NORTH-ANTECHAMBER>
 		     <NOT <FSET? ,BURIAL-CHAMBER ,RMUNGBIT>>>
+		<FIXED-FONT-ON>
 		<TELL CR
 "             -     !=!|
 <-*  #  /!\\  .   #  ! !|
 |
-::  *->  #  !!!" CR>)
+::  *->  #  !!!" CR>
+		<FIXED-FONT-OFF>)
 	       (<AND <ROOM? SOUTH-ANTECHAMBER>
 		     <NOT <FSET? ,ANNEX-DOOR ,OPENBIT>>>
+		<FIXED-FONT-ON>
 		<TELL CR
 "                      -|
 <-*  #  /!\\  (.)  #  ! !|
@@ -597,7 +611,8 @@ will be too." CR>)
 |
            -|
 ::  (  #  ! !|
-           -" CR>)
+           -" CR>
+		<FIXED-FONT-OFF>)
 	       (<ROOM? ,ROOM-OF-NEPHTHYS ,ROOM-OF-ISIS
 		       ,ROOM-OF-SELKIS ,ROOM-OF-NEITH>
 		<COND (<EQUAL? ,HERE ,ROOM-OF-NEPHTHYS>
@@ -616,6 +631,7 @@ will be too." CR>)
 			<COND (<EQUAL? .TEMP
 				       <GET ,ORDER-LTBL .COUNTER>>
 			       <RETURN>)>>
+		<FIXED-FONT-ON>
 		<TELL CR "       " <GET ,STAR-LTBL .COUNTER> CR>
 		<TELL CR
 "          " <GET ,COMPASS-POINTS-LTBL .OFFSET> CR>
@@ -623,41 +639,52 @@ will be too." CR>)
 "))  /  #  " <GET ,COMPASS-TAILS-LTBL .OFFSET> "  ::|
 |
 <-*  "
-	     <GET ,STAR-LTBL .COUNTER> "  =!=  /  *" CR>)
+	     <GET ,STAR-LTBL .COUNTER> "  =!=  /  *" CR>
+		<FIXED-FONT-OFF>)
 	       (<IN? ,WINNER ,BEND-HALL>
+		<FIXED-FONT-ON>
 		<TELL
 "
           .      =  - -|
 !@!  ...>  -  #  *   =   ::  <...  ;|
 |
 #  *|
-   =" CR>)
+   =" CR>
+		<FIXED-FONT-OFF>)
 	       (<IN? ,WINNER ,CENTRAL-ROOM>
 		<TELL
 "The hieroglyphs look like this:|
-|
+">
+		<FIXED-FONT-ON>
+		<TELL "|
                     !-!|
 ...>  -.  >...  #  !  ! !|
                     !-!|
 |
-/  ...>  /  #  !@!" CR>)
+/  ...>  /  #  !@!" CR>
+		<FIXED-FONT-OFF>)
 	       (<EQUAL? ,HERE ,SOUTH-CENTER>
 		<TELL
-"The hieroglyphs look like this:
-|
-|
+"The hieroglyphs look like this:|
+">
+		<FIXED-FONT-ON>
+		<TELL "|
  <.>     <:>     <:.>|
 |
  <::>    <::.>   <:::>|
 |
- <:::.>  <::::>  <::::.>" CR>)
+ <:::.>  <::::>  <::::.>" CR>
+		<FIXED-FONT-OFF>)
 	       (<EQUAL? <LOC ,WINNER> ,SKELETON-ROOM ,SILVER-ROOM ,GOLDEN-ROOM>
 		<TELL
 "The hieroglyphs look like this:|
-|
+">
+		<FIXED-FONT-ON>
+		<TELL "|
 -!-  #  !*  ::  #  *!  ::|
 |
-*->  #  !@!  >*>" CR>)
+*->  #  !@!  >*>" CR>
+		<FIXED-FONT-OFF>)
 	       (T
 		<TELL "I don't see them here." CR>)>
 	 <RTRUE>>
